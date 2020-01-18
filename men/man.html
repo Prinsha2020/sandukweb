@@ -28,6 +28,21 @@
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+			#footer {
+   			        width:100%;
+    			       /*position:absolute;
+    			       bottom:0;
+    			      left:0;*/
+    			      background-color:#152238;
+    			}
+
+
+			.footer:before {
+  			  clear: both;
+  			  display: block;
+   			 height: 120px;
+    			min-height: 120px;
+			}		
 </head>
 <body>
 <!--header-->
@@ -351,10 +366,8 @@
 	</div>
 	
 	</div>
-	<footer>  
-	<!-- Footer Section Begin -->
-    <footer class="footer-section">
-        <div class="container">
+<footer id="footer" style="background-color:#152238;">
+	<div class="container">
             <div class="row">
                 <div class="col-lg-3">
                     <div class="footer-left">
@@ -373,10 +386,10 @@
                     <div class="footer-widget">
                         <h5>Information</h5>
                         <ul>
-                            <li><a href="#">About Us</a></li>
+                            <li><a href="file:///E:/sandukh%20finished/rik/aboutus.html">About Us</a></li>
+                            
+                            <li><a href="file:///E:/sandukh%20finished/rik/contact.html">Contact</a></li>
                             <li><a href="#">Checkout</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Serivius</a></li>
                         </ul>
                     </div>
                 </div>
@@ -384,10 +397,11 @@
                     <div class="footer-widget">
                         <h5>My Account</h5>
                         <ul>
-                            <li><a href="#">My Account</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Shopping Cart</a></li>
-                            <li><a href="#">Shop</a></li>
+                            <li><a href="file:///E:/sandukh%20finished/rik/login.html?">My Account</a></li>
+                            <li><a href="file:///E:/sandukh%20finished/rik/contact.html">Contact</a></li>
+                            
+                            <li><a href="file:///E:/sandukh%20finished/all/product.html">Shop</a></li>
+							<li><a href="NOT.HTML">Shopping Cart</a></li>
                         </ul>
                     </div>
                 </div>
@@ -403,21 +417,6 @@
                 </div>
             </div>
         </div>
-        <div class="copyright-reserved">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="copyright-text">
-
-                        </div>
-                        <div class="payment-pic">
-                            <img src="img/payment-method.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-	</footer>
+</footer>
 	</body>
 	</html>
