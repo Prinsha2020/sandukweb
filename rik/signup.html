@@ -43,7 +43,7 @@
 			}
 			.box{
 				position: absolute;
-				top: 70%;
+				top: 60%;
 				left: 50%;
 				transform: translate(-50%,-50%);
 				width: 400px;
@@ -155,30 +155,65 @@
 	<div class="res">
 		<div class="box">
 			<h2>Sign up</h2>
-			<form>
-				<div class="inputbox">
-					<input type="text" name="" required="">
-					<label>First name</label>
-				</div>
-				<div class="inputbox">
-					<input type="password" name="" required="">
-					<label>Last name</label>
-				</div>
-				<div class="inputbox">
-					<input type="text" name="" required="">
-					<label>E-mail</label>
-				</div>
-				<div class="inputbox">
-					<input type="text" name="" required="">
-					<label>Username</label>
-				</div>
-				<div class="inputbox">
-					<input type="password" name="" required="">
-					<label>Password</label>
-				</div>
-				<input type="submit" name="" value="submit">
-			</form>
+			<form id="myform" action="login.html" onsubmit="return validate()">
+					<div class="inputbox">
+						<input type="text" name="firstname" placeholder="First name" id="fname" >
+					</div>
+					<div class="inputbox">
+						<input type="text" name="lastname" placeholder="Last name" id="lname">
+					</div>
+					<div class="inputbox">
+						<input type="text" name="email" placeholder="Email" id="email">
+					</div>
+					<div class="inputbox">
+						<input type="text" name="username" placeholder="Username" id="username">
+					</div>
+					<div class="inputbox">
+						<input type="password" name="password" placeholder="Password" id="password">
+					</div>
+					<input type="submit" name="" value="Submit">
+				</form>	
 		</div>
-		</div>
+	</div>
 	</body>
+	<script>
+		function validate(){
+			var firstname = document.getElementById("fname");
+			var lastname = document.getElementById("lname");
+			var email = document.getElementById("email");
+			var username = document.getElementById("username");
+			var password = document.getElementById("password");
+			
+			if(firstname.value=="")
+			{
+				alert("Please Enter Valid First Name");
+				
+			}
+			
+			if(lastname.value=="")
+			{
+				alert("Please Enter Valid Last Name");
+				
+			}
+			
+			if(email.value=="")
+			{
+				alert("Please Enter Valid Email");
+				
+			}
+			
+			if(username.value=="")
+			{
+				alert("Please Enter Valid Username");
+				
+			}
+			
+			if(password.value=="")
+			{
+				alert("Please Enter Valid Password");
+				
+			}
+			
+		}
+	</script>
 </html>	
