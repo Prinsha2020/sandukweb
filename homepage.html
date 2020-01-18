@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -33,6 +33,23 @@
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+			#footer {
+   			        width:100%;
+    			       /*position:absolute;
+    			       bottom:0;
+    			      left:0;*/
+    			      background-color:#152238;
+    			}
+
+
+			.footer:before {
+  			  clear: both;
+  			  display: block;
+   			 height: 120px;
+    			min-height: 120px;
+			}
+</style>
 </head>
 <body>
 <!--header-->
@@ -255,10 +272,8 @@
 	</main>
 	
 	<!--/main section-->
-	<footer>  
-	<!-- Footer Section Begin -->
-    <footer class="footer-section bg-color:#152238">
-        <div class="container">
+	<footer id="footer">
+	<div class="container">
             <div class="row">
                 <div class="col-lg-3">
                     <div class="footer-left">
@@ -308,10 +323,7 @@
                 </div>
             </div>
         </div>
-    
-    </footer>
-    <!-- Footer Section End -->
-
+</footer>
 	
 	
 		
