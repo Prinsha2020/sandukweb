@@ -16,10 +16,10 @@ body{
 .main{padding:10px;}
 .wrapper{
   position: absolute;
-  top: 50%;
+  top: 244PX;
   transform: translateY(-50%);
   width: 100%;
-  padding: 0 20px;
+  padding: 0 20px 0;
 }
 
 .contact-form{
@@ -27,7 +27,7 @@ body{
   max-width: 550px;
   margin: 0 auto;
   background: rgba(0,0,0,0.6);
-  padding: 20x;
+  padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
@@ -93,3 +93,18 @@ body{
     width: 100%;
   }
 }
+#footer {
+   			        width:100%;
+    			       /*position:absolute;
+    			       bottom:0;
+    			      left:0;*/
+    			      background-color:#152238;
+    			}
+
+
+			.footer:before {
+  			  clear: both;
+  			  display: block;
+   			 height: 120px;
+    			min-height: 120px;
+			}	
