@@ -75,24 +75,7 @@
 				outline: none;
 				background: transparent;
 			} 
-			.box .inputbox label{
-				position: absolute;
-				top: 0;
-				left: 0;
-				letter-spacing: 1px;
-				padding: 10px 0;
-				font-size: 16px;
-				color: #fff;
-				pointer-events: none;
-				transition: .5s;
-			}	
-			.box .inputbox input:focus~label,
-			.box .inputbox input:valid~label{
-				top: -18px;
-				left: 0;
-				color: #03a9f4;
-				font-size: 12px;
-			}
+
 			input[type=submit] {
 				width: 100%;
 				box-sizing: border-box;
@@ -171,16 +154,16 @@
 	<div class="res">
 		<div class="box">
 			<h2>Login</h2>
-			<form>
+			<form action="homepage.html" onsubmit="validate()">
 				<div class="inputbox">
-					<input type="text" name="" required="">
-					<label>Username</label>
+					<input type="text" name="" value="" placeholder="Username" id="username" >
+	
 				</div>
 				<div class="inputbox">
-					<input type="password" name="" required="">
-					<label>Password</label>
+					<input type="password" name="" value="" placeholder="Password" id="password" >
+					
 				</div>
-				<a href="../HOMEPAGE.HTML"><input type="submit" name="" value="submit"></A>
+				<input type="submit" name="" value="submit">
 			</form>
 		</div>
 		</div>
@@ -241,4 +224,21 @@
         </div>
 </footer>
 	</body>
+	<script>
+			function validate(){
+				var username = document.getElementById("username");
+				var password = document.getElementById("password");
+				if(username.value=="")
+				{
+					alert("Please Enter Valid Username");
+			
+				}
+				if(password.value=="")
+				{
+					alert("Please Enter Valid Password");
+					
+				}
+				
+			}
+	</script>
 </html>	
