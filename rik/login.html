@@ -63,6 +63,7 @@
 			}
 			.box .inputbox{
 				position: relative;
+				
 			}
 			.box .inputbox input{
 				width: 100%;
@@ -75,6 +76,7 @@
 				border-bottom: 1px solid #fff;
 				outline: none;
 				background: transparent;
+				
 			} 
 
 			input[type=submit] {
@@ -157,13 +159,13 @@
 	<div class="res">
 		<div class="box">
 			<h2>Login</h2>
-			<form action="homepage.html" onsubmit="validate()">
-				<div class="inputbox">
-					<input type="text" name="" value="" placeholder="Username" id="username" >
+			<form action="homepage.html" onsubmit="return validate()">
+	<div class="inputbox">
+		<input type="text" name="" value="" placeholder="Username" id="username" required>
 	
 				</div>
-				<div class="inputbox">
-					<input type="password" name="" value="" placeholder="Password" id="password" >
+	<div class="inputbox">
+		<input type="password" name="" value="" placeholder="Password" id="password" required >
 					
 				</div>
 				<input type="submit" name="" value="Submit">
@@ -231,17 +233,14 @@
 			function validate(){
 				var username = document.getElementById("username");
 				var password = document.getElementById("password");
-				if(username.value=="")
+				if(username.value=="rmaharjan" && password.value=="rishav")
 				{
-					alert("Please Enter Valid Username");
+					
+					return true;
 			
 				}
-				if(password.value=="")
-				{
-					alert("Please Enter Valid Password");
-					
-				}
-				
+				alert ("Invalid username or password");
+				return false;
 			}
 	</script>
 </html>	

@@ -172,24 +172,25 @@
 		<div class="box">
 			<h2>Sign up</h2>
 			<form id="myform" action="login.html" onsubmit="return validate()">
-					<div class="inputbox">
-						<input type="text" name="firstname" placeholder="First name" id="fname" >
+		<div class="inputbox">
+			<input type="text" name="firstname" placeholder="First name" id="fname" required>
 					</div>
 					<div class="inputbox">
-						<input type="text" name="lastname" placeholder="Last name" id="lname">
+			<input type="text" name="lastname" placeholder="Last name" id="lname" required>
+					</div>
+		<div class="inputbox">
+			<input type="email" name="email" placeholder="Email" id="email" required>
 					</div>
 					<div class="inputbox">
-						<input type="text" name="email" placeholder="Email" id="email">
+						<input type="text" name="username" placeholder="Username" id="username" required>
 					</div>
 					<div class="inputbox">
-						<input type="text" name="username" placeholder="Username" id="username">
-					</div>
-					<div class="inputbox">
-						<input type="password" name="password" placeholder="Password" id="password">
+						<input type="password" name="password" placeholder="Password" id="password" required>
 					</div>
 					<input type="submit" name="" value="Submit">
 				</form>	
 		</div>
+</div>
 
 <footer id="footer">
 	<div class="container">
@@ -252,36 +253,20 @@
 			var email = document.getElementById("email");
 			var username = document.getElementById("username");
 			var password = document.getElementById("password");
-			
-			if(firstname.value=="")
-			{
-				alert("Please Enter Valid First Name");
-				
+
+		 	if(password.value.length<=8){
+				console.log("password should be more than eight characters");
+				return false;
 			}
 			
-			if(lastname.value=="")
-			{
-				alert("Please Enter Valid Last Name");
-				
-			}
-			
-			if(email.value=="")
-			{
-				alert("Please Enter Valid Email");
-				
-			}
-			
-			if(username.value=="")
-			{
-				alert("Please Enter Valid Username");
-				
-			}
-			
-			if(password.value=="")
-			{
-				alert("Please Enter Valid Password");
-				
-			}
+console.log("firstname =" , firstname.value);
+ console.log("lastname =" , lastname.value);
+console.log("email =" , email.value);
+console.log("username =" , username.value);
+			alert("your signup is successful");
+
+
+			return true;
 			
 		}
 	</script>
