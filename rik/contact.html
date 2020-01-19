@@ -17,7 +17,9 @@
 <script src="https://kit.fontawesome.com/0c0bdf62e2.js" crossorigin="anonymous"></script>
 
 <!--Custom Stylesheet-->
+
 <link rel="stylesheet" href="../css/1.css"/>
+
  
        <!-- Css Styles -->
    
@@ -29,10 +31,118 @@
     <link rel="stylesheet" href="../css/style.css" type="text/css">
 
 
+
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
  <style>
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  //background: url('contactus.png') no-repeat top center;
+  background-size: cover;
+}
+//.main{padding:10px;}
+
+.wrap{
+	margin:15px;
+	
+	}
+.contact-form{
+  display: flex;
+  max-width: 550px;
+  margin: 0 auto;
+  background: rgba(0,0,0,0.6);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.input-fields{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+
+.input-fields,
+.msg{
+  width: 48%;
+}
+
+.input-fields .input,
+.msg textarea{
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #c5ecfd;
+  padding: 10px;
+  color: #c5ecfd;
+  width: 100%;
+}
+
+.msg textarea{
+  height: 212px;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #c5ecfd;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #c5ecfd;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #c5ecfd;
+}
+
+.btn {
+    background:#60ADDE;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color:white;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px){
+  .contact-form{
+    flex-direction: column;
+  }
+  .msg textarea{
+    height: 80px;
+  }
+  .input-fields,
+  .msg{
+    width: 100%;
+  }
+}
+#footer {
+   			        width:100%;
+    			      margin-bottom:0px;
+    			      background-color:#152238;
+
+    			}
+
+/*.footer:before {
+  			  clear: both;
+  			  display: block;
+   			 height: 150px;
+    			min-height: 120px;
+			}*/	
+</style>
+=======
 			.about-us{
 				width:100%;
 				min-height:300px;
@@ -76,6 +186,7 @@
     			min-height: 120px;
 			}	
 		</style>
+
 
 </head>
 
@@ -128,9 +239,8 @@
 		
 	</header>
 	<!--/header-->
-	<main>
-	<div class="res">
-<div class="wrapper">
+	<main style="margin-top:100px;">
+<div class="wrap">
   <div class="contact-form">
     <div class="input-fields">
       <input type="text" class="input" placeholder="Name">
@@ -144,7 +254,6 @@
     </div>
   </div>
 </div>	
-</div>
 
 </main>
 
@@ -154,7 +263,7 @@
                 <div class="col-lg-3">
                     <div class="footer-left">
                         <div class="footer-logo">
-                            <a href="#"><img src="#" alt=""></a>
+                            <a href="#"><img src="logo.png" alt="" style="width:90px; height:50px; padding-top:5px;"></a>
                         </div>
                         <ul>
                             <li>Address: NEW ROAD, KATHMANDU NEPAL</li>
