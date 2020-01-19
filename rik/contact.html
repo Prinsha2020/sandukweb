@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Contact Us form</title>
-	<link rel="stylesheet" href="./css/contact.css">
+	<link rel="stylesheet" href="../css/contact.css">
 	
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -17,24 +17,26 @@
 <script src="https://kit.fontawesome.com/0c0bdf62e2.js" crossorigin="anonymous"></script>
 
 <!--Custom Stylesheet-->
-<link rel="stylesheet" href="css/1.css"/>
- 
-    <!-- Css Styles -->
-   
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/themify-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-   
-    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
 
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+<link rel="stylesheet" href="../css/1.css"/>
+
+ 
+       <!-- Css Styles -->
+   
+    <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
+    
+   <link rel="stylesheet" href="../css/product.css" type="text/css">
+  
+
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+
 
 
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
  <style>
+
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 *{
@@ -140,43 +142,97 @@ body{
     			min-height: 120px;
 			}*/	
 </style>
+=======
+			.about-us{
+				width:100%;
+				min-height:300px;
+				background-image:url(image.jpg);
+				background-size:100% 100%;
+				background-postion:cover;
+				background-attachment:fixed;
+				text-align:justify;
+			}
+			.about-us h1{text-align:center;}
+			.wrap-container{
+				width:80%;
+				margin: 0px auto;
+			}
+			.about-us h1{
+				color:BLACK;
+				padding: 50px 0px;
+				margin-bottom:-30px;
+			}
+			.about-us p{
+				color:BLACK;
+				font-size:20px;
+				font-family:Garamond;
+				font-style:bold;
+				line-height:2.5;
+				padding-bottom:5%;
+			}
+			#footer {
+   			        width:100%;
+    			       /*position:absolute;
+    			       bottom:0;
+    			      left:0;*/
+    			      background-color:#152238;
+    			}
+
+
+			.footer:before {
+  			  clear: both;
+  			  display: block;
+   			 height: 120px;
+    			min-height: 120px;
+			}	
+		</style>
+
+
 </head>
 
-<body style="background-image:url(contact.png)">
+<body style="background-image:url(../pic/contact.png)">
 	<!--header-->
 	<header>
 			<nav class="navbar navbar-expand-lg navbar-light">
-			<img src="logo.png" style="width:90px; height:50px; float:left; //padding:10px">
-			  
+			<a href="../homepage.html">
+			<img src="../pic/logo.png" style="width:90px; height:50px; float:left; //padding:10px">
+			  </a>
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			  </button>
-			  <div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav">
-				  <li class="nav-item">
-					<a class="nav-link" href="file:///E:/sanduk/homepage.html"><i class="fa fa-fw fa-home"></i> HOME<span class="sr-only">(current)</span></a>
+			   <div class="collapse navbar-collapse" id="navbarNav">
+				   <ul class="navbar-nav">
+				  <li class="nav-item active">
+					<a class="nav-link" href="../homepage.html"><i class="fa fa-fw fa-home"></i> HOME<span class="sr-only">(current)</span></a>
 				  </li>
 				  <li class="nav-item">
-					<a class="nav-link" href="file:///E:/sanduk/all/product.html"><i class="fa fa-fw fa-shopping-cart"></i> SHOP</a>
+					<a class="nav-link" href="../all/product.html"><i class="fa fa-fw fa-shopping-cart"></i> SHOP</a>
 				  </li>
 				  <li class="nav-item">
-					<a class="nav-link" href="file:///E:/sanduk/rik/aboutus.html"><i class="fa fa-fw fa-address-card"></i> ABOUT US</a>
+					<a class="nav-link" href="../rik/aboutus.html"><i class="fa fa-fw fa-address-card"></i> ABOUT US</a>
 				  </li>
-				   <li class="nav-item active">
-					<a class="nav-link" href="file:///E:/sanduk/rik/contact.html"><i class="fa fa-fw fa-envelope"></i> CONTACT US</a>
+				   <li class="nav-item">
+					<a class="nav-link" href="../rik/contact.html"><i class="fa fa-fw fa-envelope"></i> CONTACT US</a>
 				  </li>
+				   <li class="nav-item">
+					<a class="nav-link" href="../not.html" target="blank"><i class="fa fa-fw fa-shopping-cart"></i> SHOPPING CART</a>
+				  </li>
+				   <li class="nav-item">
+					<a class="nav-link" href="../not.html" target="blank"><i class="fa fa-fw fa-heart"></i> FAVOURITES</a>
+				  </li>
+				 
 				 
 				</ul>
 			  </div>
 			 
-			
    <div class="col-md-4 col-12 text-right" >
-					<p class="my-md-4 header-links" >
-						<a href="file:///E:/sanduk/rik/login.html" class="px-2" style="color:white;"><i class="fa fa-fw fa-user"></i> Log In</a>
-						<a href="file:///E:/sanduk/rik/signup.html" class="px-1" style="color:white;"><i class="fa fa-fw fa-user-plus"></i>Sign Up</a>
+						<p class="my-md-4 header-links" >
+						<a href="../rik/login.html" class="px-2" style="color:white;"><i class="fa fa-fw fa-user"></i> Log In</a>
+						<a href="../rik/signup.html" class="px-1" style="color:white;"><i class="fa fa-fw fa-user-plus"></i>Sign Up</a>
 						
 						
 					</p>
+				
 				
 			</nav>
 		
@@ -200,6 +256,7 @@ body{
 </div>	
 
 </main>
+
 <footer id="footer">
 	<div class="container">
             <div class="row">
@@ -220,10 +277,10 @@ body{
                     <div class="footer-widget">
                         <h5>Information</h5>
                         <ul>
-                            <li><a href="file:///E:/sandukh%20finished/rik/aboutus.html">About Us</a></li>
+                            <li><a href="../rik/aboutus.html">About Us</a></li>
                             
-                            <li><a href="file:///E:/sandukh%20finished/rik/contact.html">Contact</a></li>
-                            <li><a href="#">Checkout</a></li>
+                            <li><a href="../rik/contact.html">Contact</a></li>
+                            <li><a href="../not.html" target="blank">Checkout</a></li>
                         </ul>
                     </div>
                 </div>
@@ -231,11 +288,11 @@ body{
                     <div class="footer-widget">
                         <h5>My Account</h5>
                         <ul>
-                            <li><a href="file:///E:/sandukh%20finished/rik/login.html?">My Account</a></li>
-                            <li><a href="file:///E:/sandukh%20finished/rik/contact.html">Contact</a></li>
+                            <li><a href="../rik/login.html?">My Account</a></li>
+                            <li><a href="../rik/contact.html">Contact</a></li>
                             
-                            <li><a href="file:///E:/sandukh%20finished/all/product.html">Shop</a></li>
-							<li><a href="NOT.HTML">Shopping Cart</a></li>
+                            <li><a href="../all/product.html">Shop</a></li>
+							<li><a href="../NOT.HTML" target="blank">Shopping Cart</a></li>
                         </ul>
                     </div>
                 </div>
