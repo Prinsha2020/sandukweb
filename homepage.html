@@ -5,29 +5,27 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>SANDUK</tITLE>
+
 	 <link rel="icon" href="favicon.ico" type="image/ico" sizes="16x16"> 
+
 <!--bootstrap CDN-->
 <link rel="stylesheet"
  href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
  crossorigin="anonymous"/>
-<!--Font Awesome CDN-->
-<script src="https://kit.fontawesome.com/0c0bdf62e2.js" crossorigin="anonymous"></script>
-<!--slick slider-->
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+
 <!--Custom Stylesheet-->
-<link rel="stylesheet" href="./css/1.css"/>
+<link rel="stylesheet" href="css/1.css"/>
  
 
     <!-- Css Styles -->
    
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/themify-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    
    <link rel="stylesheet" href="css/product.css" type="text/css">
-    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+  
 
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 
 
@@ -56,25 +54,42 @@
 <!--header-->
 	<header>
 			<nav class="navbar navbar-expand-lg navbar-light">
-			<img src="logo.png" style="width:90px; height:50px; float:left; //padding:10px">
-			  
+			<a href="homepage.html">
+			<img src="pic/logo.png" style="width:90px; height:50px; float:left; //padding:10px">
+			  </a>
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			  </button>
 			  <div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
-				  <li class="nav-item active">
+				<li class="nav-item active">
 					<a class="nav-link" href="file:///E:/sanduk/homepage.html"><i class="fa fa-fw fa-home"></i> HOME<span class="sr-only">(current)</span></a>
 				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="file:///E:/sanduk/all/product.html"><i class="fa fa-fw fa-shopping-cart"></i> SHOP</a>
+				  <div class="nav-item">
+				  <li class="dropdown" style="margin-top:14px; color:white;">
+				  <a href="javascript:void(0)" class="dropbtn" style="color: #fff"><i class="fa fa-fw fa-shopping-cart"></i> SHOP</a>
+				  <div class="dropdown-content">
+				  <a href="#">Men</a>
+				   <a href="#">Women</a>
+				    <a href="#">Shoes</a>
+					</div>
 				  </li>
+				  </div>
 				  <li class="nav-item">
-					<a class="nav-link" href="file:///E:/sanduk/rik/aboutus.html"><i class="fa fa-fw fa-address-card"></i> ABOUT US</a>
+					<a class="nav-link" href="rik/aboutus.html"><i class="fa fa-fw fa-address-card"></i> ABOUT US</a>
 				  </li>
 				   <li class="nav-item">
-					<a class="nav-link" href="file:///E:/sanduk/rik/contact.html"><i class="fa fa-fw fa-envelope"></i> CONTACT US</a>
+					<a class="nav-link" href="rik/contact.html"><i class="fa fa-fw fa-envelope"></i> CONTACT US</a>
 				  </li>
+				 
+				   <li class="nav-item">
+					<a class="nav-link" href="not.html" target="blank"><i class="fa fa-fw fa-shopping-cart"></i> SHOPPING CART</a>
+				  </li>
+				   <li class="nav-item">
+					<a class="nav-link" href="not.html" target="blank" ><i class="fa fa-fw fa-heart"></i> FAVOURITES</a>
+				  </li>
+				  
+				 
 				 
 				</ul>
 			  </div>
@@ -82,8 +97,8 @@
 			
    <div class="col-md-4 col-12 text-right" >
 					<p class="my-md-4 header-links" >
-						<a href="file:///E:/sanduk/rik/login.html" class="px-2" style="color:white;"><i class="fa fa-fw fa-user"></i> Log In</a>
-						<a href="file:///E:/sanduk/rik/signup.html" class="px-1" style="color:white;"><i class="fa fa-fw fa-user-plus"></i>Sign Up</a>
+						<a href="rik/login.html" class="px-2" style="color:white;"><i class="fa fa-fw fa-user"></i> Log In</a>
+						<a href="rik/signup.html" class="px-1" style="color:white;"><i class="fa fa-fw fa-user-plus"></i>Sign Up</a>
 						
 						
 					</p>
@@ -113,16 +128,16 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="assets/banner2.jpg" alt="banner1" style="width:100%;">
+       <img src="pic/b1.png" alt="banner3" style="width:100%;">
       </div>
 
        <div class="item">
-        <img src="b1.png" alt="banner3" style="width:100%;">
+        <img src="pic/banner3.jpg" alt="banner3" style="width:100%;">
       </div>
     
     
       <div class="item">
-        <img src="assets/shoban2.jpg" alt="banner3" style="width:100%;">
+        <img src="pic/shoban2.jpg" alt="banner3" style="width:100%;">
       </div>
     </div>
 
@@ -147,25 +162,25 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="single-banner">
-                        <img src="img/MEN.PNG" alt="">
+                        <img src="pic/MEN.PNG" alt="">
                         <div class="inner-text">
-                            <a href="file:///E:/sanduk/men/man.html">Men’s</a>
+                            <a href="men/man.html">Men’s</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="single-banner">
-                        <img src="img/WOMEN.jpg" alt="">
+                        <img src="pic/WOMEN.jpg" alt="">
                         <div class="inner-text">
-                              <a href="file:///E:/sanduk/reme/myshop.html">Women’s</a>
+                              <a href="reme/myshop.html">Women’s</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="single-banner">
-                        <img src="img/shoe.png" alt="">
+                        <img src="pic/shoe.png" alt="">
                         <div class="inner-text">
-                            <a href="file:///E:/sanduk/san/shoes.html">Shoes</a>
+                            <a href="san/shoes.html">Shoes</a>
                         </div>
                     </div>
                 </div>
@@ -178,7 +193,7 @@
 	<div class="row" id="rows">
 	<div class="col-md-3">
 	<div class="product-top">
-	<img src="a3.jpg">
+	<img src="pic/a3.jpg">
 	<div class="overlay">
 	<button type="button" class="btn btn-secondary" title="Quick Shop">
 	<i class="fa fa-eye"></i></button>
@@ -200,7 +215,7 @@
 	</div>
 	<div class="col-md-3">
 	<div class="product-top">
-	<img src="blag.jpg">
+	<img src="pic/blag.jpg">
 	<div class="overlay">
 	<button type="button" class="btn btn-secondary" title="Quick Shop">
 	<i class="fa fa-eye"></i></button>
@@ -215,13 +230,13 @@
 			<i class="fa fa-star"></i>
 			<i class="fa fa-star"></i>
 			<i class="fa fa-star"></i>
-			<h3>Blezer</h3>
+			<h3>Blazer</h3>
 			<h5>Rs 5000</h5>
 	</div>
 	</div>
 	<div class="col-md-3">
 	<div class="product-top">
-	<img src="convf.jpg">
+	<img src="pic/convf.jpg">
 	<div class="overlay">
 	<button type="button" class="btn btn-secondary" title="Quick Shop">
 	<i class="fa fa-eye"></i></button>
@@ -244,7 +259,7 @@
 	</div>
 	<div class="col-md-3">
 	<div class="product-top">
-	<img src="q.jpg">
+	<img src="pic/q.jpg">
 	<div class="overlay">
 	<button type="button" class="btn btn-secondary" title="Quick Shop">
 	<i class="fa fa-eye"></i></button>
@@ -268,7 +283,7 @@
 	
 	</div>
 	</div>
-	 <p STYLE="TEXT-ALIGN:CENTER;"> <a class="nav-link" href="file:///E:/sandukh%20finished/all/product.html"><i class="fa fa-fw fa-shopping-cart"></i>SHOP</a></p>
+	 <p STYLE="TEXT-ALIGN:CENTER;"> <a class="nav-link" href="all/product.html"><i class="fa fa-fw fa-shopping-cart"></i>View More</a></p>
 	</div>
 	</main>
 	
@@ -293,10 +308,10 @@
                     <div class="footer-widget">
                         <h5>Information</h5>
                         <ul>
-                            <li><a href="file:///E:/sandukh%20finished/rik/aboutus.html">About Us</a></li>
+                            <li><a href="rik/aboutus.html">About Us</a></li>
                             
-                            <li><a href="file:///E:/sandukh%20finished/rik/contact.html">Contact</a></li>
-                            <li><a href="#">Checkout</a></li>
+                            <li><a href="rik/contact.html">Contact</a></li>
+                            <li><a href="not.html" target="blank">Checkout</a></li>
                         </ul>
                     </div>
                 </div>
@@ -304,11 +319,11 @@
                     <div class="footer-widget">
                         <h5>My Account</h5>
                         <ul>
-                            <li><a href="file:///E:/sandukh%20finished/rik/login.html?">My Account</a></li>
-                            <li><a href="file:///E:/sandukh%20finished/rik/contact.html">Contact</a></li>
+                            <li><a href="rik/login.html?">My Account</a></li>
+                            <li><a href="rik/contact.html">Contact</a></li>
                             
-                            <li><a href="file:///E:/sandukh%20finished/all/product.html">Shop</a></li>
-							<li><a href="NOT.HTML">Shopping Cart</a></li>
+                            <li><a href="all/product.html">Shop</a></li>
+							<li><a href="NOT.HTML" target="blank">Shopping Cart</a></li>
                         </ul>
                     </div>
                 </div>
@@ -324,6 +339,7 @@
                 </div>
             </div>
         </div>
+		
 </footer>
 	
 	
